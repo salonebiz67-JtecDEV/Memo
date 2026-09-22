@@ -1,0 +1,7 @@
+# Copy this file to .env locally, and set these same values as
+# Environment Variables in your Render dashboard for deployment.
+
+SUPABASE_URL=https://your-project.supabase.co
+SUPABASE_SERVICE_ROLE_KEY=your-service-role-key-here
+ANTHROPIC_API_KEY=your-anthropic-api-key-here
+PORT=3000
