@@ -5,6 +5,7 @@ import cron from 'node-cron';
 import { supabase } from './supabase.js';
 import chatRouter from './routes/chat.js';
 import remindersRouter from './routes/reminders.js';
+import settingsRouter from './routes/settings.js';
 
 dotenv.config();
 
@@ -14,6 +15,7 @@ app.use(express.json());
 
 app.use('/api/chat', chatRouter);
 app.use('/api/reminders', remindersRouter);
+app.use('/api/settings', settingsRouter);
 
 app.get('/', (req, res) => {
   res.send('Memo backend is running.');
